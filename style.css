@@ -10,17 +10,25 @@
 }
 
 .disclaimer-banner {
-    background: #ffcc00;
+    background: rgba(255, 204, 0, 0.85);
+    /* わずかに透過 */
     color: #000;
     text-align: center;
-    padding: 0.3rem 0.5rem;
-    font-weight: bold;
-    font-size: 0.7rem;
+    padding: 0.15rem 0.5rem;
+    /* さらなるスリム化 */
+    font-weight: 700;
+    font-size: 0.65rem;
+    /* わずかに縮小 */
+    letter-spacing: 0.05em;
+    /* 視認性向上のための字間 */
+    line-height: 1.2;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    /* 背景のボケ */
 }
 
 * {
