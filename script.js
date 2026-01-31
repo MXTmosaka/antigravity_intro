@@ -36,10 +36,10 @@ function initHomePage() {
             statusPanel.classList.remove('hidden');
 
             const logs = [
-                "Analying user request...",
-                "Loading knowledge base...",
-                "Optimizing neural pathways...",
-                "System READY."
+                "ユーザーリクエストを解析中...",
+                "ナレッジベースをロード中...",
+                "ニューラルパスを最適化中...",
+                "システム準備完了。"
             ];
 
             let logIndex = 0;
@@ -60,7 +60,7 @@ function initHomePage() {
                     logIndex++;
                 } else {
                     clearInterval(logInterval);
-                    ctaButton.textContent = "System Active";
+                    ctaButton.textContent = "システム稼働中";
                     ctaButton.style.backgroundColor = "var(--secondary-color)";
                     ctaButton.style.color = "#fff";
                     ctaButton.style.borderColor = "var(--secondary-color)";
@@ -150,7 +150,7 @@ function initPlayground() {
         btn.addEventListener(evt, (e) => {
             e.preventDefault();
             isAntiGravity = true;
-            btn.textContent = "ANTI-GRAVITY ACTIVE";
+            btn.textContent = "反重力稼働中";
             btn.style.background = "var(--secondary-color)";
             btn.style.color = "white";
         })
@@ -159,7 +159,7 @@ function initPlayground() {
     ['mouseup', 'mouseleave', 'touchend'].forEach(evt =>
         btn.addEventListener(evt, () => {
             isAntiGravity = false;
-            btn.textContent = "ACTIVATE ANTI-GRAVITY";
+            btn.textContent = "反重力起動";
             btn.style.background = "transparent";
             btn.style.color = "var(--primary-color)";
         })
