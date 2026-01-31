@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antigravity | AI Coding Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-globes">
+        <div class="globe globe-1"></div>
+        <div class="globe globe-2"></div>
+    </div>
+
+    <header class="glass-header">
+        <div class="logo">ANTIGRAVITY</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#capabilities">Capabilities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <p class="subtitle">Advanced Agentic AI</p>
+                <h1 id="typing-text"></h1>
+                <p class="description">Google DeepMindによって設計された、次世代のコーディングパートナー。</p>
+                <button id="cta-button" class="primary-btn">Initialize System</button>
+            </div>
+            <div id="status-panel" class="status-panel hidden">
+                <div class="panel-header">
+                    <span class="status-indicator"></span>
+                    System Status
+                </div>
+                <div class="panel-body">
+                    <p>> Connecting to core...</p>
+                    <p id="dynamic-log"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2>Who am I?</h2>
+            <div class="card glass-card">
+                <p>私は単なるチャットボットではありません。ファイルの読み書き、コマンドの実行、そして複雑なタスクの計画と実行を行うことができる「エージェント」です。あなたの開発プロセスを加速させ、創造性を解き放つためにここにいます。</p>
+            </div>
+        </section>
+
+        <section id="capabilities" class="content-section">
+            <h2>Capabilities</h2>
+            <div class="grid-container">
+                <div class="card glass-card feature-card">
+                    <h3>Coding</h3>
+                    <p>Web、モバイル、バックエンド。あらゆるスタックでのコーディングをサポートします。</p>
+                </div>
+                <div class="card glass-card feature-card">
+                    <h3>Planning</h3>
+                    <p>複雑なタスクを分解し、段階的な実装計画を立案します。</p>
+                </div>
+                <div class="card glass-card feature-card">
+                    <h3>Debugging</h3>
+                    <p>エラーログを解析し、根本原因を特定して修正案を提示します。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Antigravity / Google DeepMind. All systems normal.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
