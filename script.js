@@ -97,14 +97,14 @@ function initPlayground() {
     // Simulation State
     let isAntiGravity = false;
     const particles = [];
-    const particleCount = 100;
+    const particleCount = 200;
 
     class Particle {
         constructor() {
             this.x = Math.random() * width;
             this.y = Math.random() * height;
             this.size = Math.random() * 3 + 1;
-            this.speedY = Math.random() * 2 + 1;
+            this.speedY = Math.random() * 4 + 2;
             this.color = `rgba(100, 255, 218, ${Math.random() * 0.5 + 0.1})`;
         }
 
